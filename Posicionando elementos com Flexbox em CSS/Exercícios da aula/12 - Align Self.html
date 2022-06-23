@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align self</title>
+</head>
+
+<style>
+    .flex-container{
+        display: flex;
+        max-width: 350px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+    }
+
+    .item{
+        color: white;
+        background-color: brown;
+        font-size: 24px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .center{
+        align-self: center;
+    }
+
+    .start{
+        align-items: flex-start
+    }
+
+    .end{
+        align-items: flex-end;
+    }
+
+    .baseline{
+        align-self: baseline;
+    }
+
+    .stretch{
+        align-self: stretch;
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="item">AAA</div>
+        <div class="item">123</div>
+        <div class="item">Lorem Ipsun Loren Loren Ipsun Loren</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <p>Stretch</p>
+    <div class="flex-container">
+        <div class="item .stretch">AAA</div>
+        <div class="item .streach">123</div>
+        <div class="item .streach">Lorem Ipsun Loren Loren Ipsun Loren</div>
+        <div class="item .start">Item 4</div>
+    </div>
+</body>
+</html>
